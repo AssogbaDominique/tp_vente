@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Categorie</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Liste des catégories.</h2>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Désignation</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="categorie:${listeCategorie}">
+                <td th:text="${categorie.id}"></td>
+                <td th:text="${categorie.designation}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+</body>
+</html>
