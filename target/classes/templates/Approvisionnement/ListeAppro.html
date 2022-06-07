@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>APPROVISIONNEMENT</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h2 align="center"><u>Liste des approvisionnement de stock.</u></h2>
+    
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Article</th>
+            <th>Qte approvisionnement</th>
+            <th>Date d'approvisionnement</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- thymeleaf a se documenter-->
+        <tr th:each="appro:${listeAppro}">
+            <td th:text="${appro.id}"></td>
+            <td th:text="${appro.article.libelle}"></td>
+            <td th:text="${appro.qteAppro}"></td>
+            <td th:text="${appro.dateAppro}"></td>
+            <td>
+                <a th:href="@{/appro/edit/{id}(id=${appro.id})}">Editer</a>
+                <a th:href="@{/appro/delete/{id}(id=${appro.id})}">Delete</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <a class="btn btn-info" th:href="@{/appro/form}"><span style="color:white;">Ajouter un approvisionnement</span></a>
+</div>
+<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+</body>
+</html>

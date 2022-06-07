@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Article</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search an article" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <!--<ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#"><h2>Liste des articles</h2></a>
+      </li>
+    </ul>-->
+    <h2>Liste des articles en dessous du seuil</h2>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Catégorie</th>
+            <th>Libellé</th>
+            <th>Prix</th>
+            <th>Qte stock</th>
+            <th>Qte Seuil</th>
+            <th>Date Creation</th>
+            <th>Etat</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- thymeleaf a se documenter-->
+        <tr th:each="article:${listeSeuil}">
+            <td th:text="${article.id}"></td>
+            <td th:text="${article.categorie.designation}"></td>
+            <td th:text="${article.libelle}"></td>
+            <td th:text="${article.prix}"></td>
+            <td th:text="${article.qteStock}"></td>
+            <td th:text="${article.qteSeuil}"></td>
+            <td th:text="${article.dateCreation}"></td>
+            <td th:text="${article.etat}"></td>
+            <td>
+                <a class="btn btn-danger" th:href="@{/article/delete/{id}(id=${article.id})}" role="button">Delete</a>
+                <a class="btn btn-primary" th:href="@{/article/edit/{id}(id=${article.id})}"role="button">Editer</a>
+            </td>
+        </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+</div>
+<script src="@{/js/bootstrap.bundle.min.js}"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Modifier l'approvisionnement</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><h2><u>Formulaire d'ajout d'approvisionnement.</u></h2></a>
+        </li>
+    </ul>
+    
+    <form class="row g-3" th:action="@{/approvisionnement/save}" th:object="${Un_approvisionnement}" method="post">
+        <div class="col-12">
+            <input type="hidden" th:field="*{id}" class="Form-control">
+            <input type="hidden" th:field="*{dateAppro}" class="Form-control">
+            <!--<input type="hidden" th:field="*{qteAppro}" class="Form-control">-->
+        </div>
+        <div class="col-12">
+            <label for="validationDefault01" class="form-label">Designation article</label>
+            <select class="form-select" id="validationDefault01" name="categorie_id" required>
+                <option value="">...Sélectionnez une catégorie...</option>
+                <option th:each="app:${listeAppro}"
+                        th:value="${app.id}"
+                        th:utext="${app.libelle}">
+                </option>
+            </select>
+        </div>
+        
+        <div class="col-md-6">
+            <label for="validationDefault02" class="form-label">Quantite</label>
+            <input class="form-control" id="validationDefault02" name="libelle" value="Libelle" type="number" th:field="*{qteAppro}" required >
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit">Enregistrer</button>
+        </div>
+        
+    </form>
+    <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

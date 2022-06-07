@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h2>Liste des Ventes.</h2>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Libelle</th>
+            <th>Qte vente</th>
+            <th>Date vente</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- thymeleaf a se documenter-->
+        <tr th:each="vente:${Liste_Ventes}">
+            <td th:text="${vente.id}"></td>
+            <td th:text="${vente.article.libelle}"></td>
+            <td th:text="${vente.qteVente}"></td>
+            <td th:text="${vente.dateVente}"></td>
+            <td>
+
+                <a class="btn btn-primary" th:href="@{/vente/edit/{id}(id=${vente.id})}">Editer</a>
+                <a class="btn btn-danger" th:href="@{/vente/delete/{id}(id=${vente.id})}">Delete</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <a class="btn btn-info" th:href="@{/vente/form}"><span style="color:white;">Ajouter une vente</span></a>
+</div>
+<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+</body>
+</html>

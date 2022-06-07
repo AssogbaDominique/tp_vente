@@ -15,15 +15,17 @@ import java.time.LocalDate;
 public class Article {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    //@Column(name = "ArticleId")
+    //@Column(name = "ArticleId") changement de nim
     private int id;
     private String libelle;
     private double prix;
     private int qteStock;
-    @DateTimeFormat(pattern = "yyyy/MM/dd")
+    @DateTimeFormat(pattern = "yyyy/MM/dd")//format de la date
     private LocalDate dateCreation;
     private int qteSeuil;
-    @ManyToOne
+    @Transient
+    private String etat;
+    @ManyToOne// pour une categorie j'ai plusieurs articles
     @JoinColumn(name = "categorie_id",insertable = false,updatable = false)
     private Categorie categorie;
     private int categorie_id;

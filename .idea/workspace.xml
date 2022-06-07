@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9f1edbfd-514f-4c1a-a010-c5be5bc1cabe" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nouveau document texte.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/controlleur/ApprovisionnementController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/controlleur/ArticleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/controlleur/VenteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/model/Approvisionnement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/model/Constante.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/model/Vente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/repository/ApprovisionnementRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/repository/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/repository/VenteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/service/ApprovisionnementService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/service/SecurityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/service/SecurityServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/service/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/service/VenteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/web/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/web/UserValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/about.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/apple-touch-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/departments-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/departments-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/departments-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/departments-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/departments-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/doctors/doctors-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/doctors/doctors-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/doctors/doctors-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/doctors/doctors-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/doctors/domi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/doctors/po.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/gallery/gallery-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/gallery/gallery-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/gallery/gallery-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/gallery/gallery-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/gallery/gallery-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/gallery/gallery-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/gallery/gallery-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/gallery/gallery-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/hero-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/hero.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/testimonials/testimonials-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/testimonials/testimonials-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/testimonials/testimonials-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/testimonials/testimonials-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/testimonials/testimonials-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/animate.css/animate.compat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/animate.css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/animate.css/animate.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap-icons/bootstrap-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap-icons/bootstrap-icons.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap-icons/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/boxicons/css/animations.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/boxicons/css/boxicons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/boxicons/css/boxicons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/boxicons/css/transformations.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/boxicons/fonts/boxicons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/boxicons/fonts/boxicons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/boxicons/fonts/boxicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/boxicons/fonts/boxicons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/boxicons/fonts/boxicons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/fontawesome-free/css/all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/fontawesome-free/css/all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/fontawesome-free/css/brands.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/fontawesome-free/css/brands.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/fontawesome-free/css/fontawesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/fontawesome-free/css/fontawesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/fontawesome-free/css/regular.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/fontawesome-free/css/regular.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/fontawesome-free/css/solid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/fontawesome-free/css/solid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/fontawesome-free/css/svg-with-js.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/fontawesome-free/css/svg-with-js.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/fontawesome-free/css/v4-shims.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/fontawesome-free/css/v4-shims.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/fontawesome-free/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/fontawesome-free/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/fontawesome-free/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/fontawesome-free/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/fontawesome-free/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/fontawesome-free/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/fontawesome-free/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/fontawesome-free/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/fontawesome-free/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/fontawesome-free/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/fontawesome-free/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/fontawesome-free/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/fontawesome-free/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/fontawesome-free/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/fontawesome-free/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/glightbox/css/glightbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/glightbox/css/glightbox.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/glightbox/js/glightbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/glightbox/js/glightbox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/php-email-form/validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/purecounter/purecounter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/remixicon/remixicon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/remixicon/remixicon.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/remixicon/remixicon.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/remixicon/remixicon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/remixicon/remixicon.symbol.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/remixicon/remixicon.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/remixicon/remixicon.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/remixicon/remixicon.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/swiper/swiper-bundle.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/vendor/swiper/swiper-bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/forms/Readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/forms/appointment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/forms/contact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Approvisionnement/ListeAppro.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Approvisionnement/approEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Approvisionnement/formAppro.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Medilab/Appro/ListeAppro.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Medilab/Appro/approEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Medilab/Appro/formAppro.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Medilab/ListAppro.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Medilab/ListArt.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Medilab/ListCat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Medilab/ListVente.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Medilab/Readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Medilab/article/ListeName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Medilab/article/formArticle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Medilab/article/formEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Medilab/article/listeArticle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Medilab/article/listeSeuil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Medilab/categorie/ListeCategories.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Medilab/categorie/formCategorie.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Medilab/changelog.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Medilab/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Medilab/inner-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Medilab/vente/ListeVente.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Medilab/vente/formVente.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Medilab/vente/venteEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/article/ListeName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/article/formArticle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/article/formEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/article/listeArticle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/article/listeSeuil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/categorie/formCategorie.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/vente/ListeVente.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/vente/formVente.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/vente/venteEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/welcome.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/validation.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/defi/tp_vente/TpVenteApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/defi/tp_vente/WebSecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/defi/tp_vente/controlleur/ApprovisionnementController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/defi/tp_vente/controlleur/ArticleController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/defi/tp_vente/controlleur/CategorieController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/defi/tp_vente/controlleur/VenteController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/defi/tp_vente/model/Approvisionnement.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/defi/tp_vente/model/Article.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/defi/tp_vente/model/Categorie.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/defi/tp_vente/model/Constante.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/defi/tp_vente/model/Role.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/defi/tp_vente/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/defi/tp_vente/model/Vente.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/defi/tp_vente/repository/ApprovisionnementRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/defi/tp_vente/repository/ArticleRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/defi/tp_vente/repository/CategorieRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/defi/tp_vente/repository/RoleRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/defi/tp_vente/repository/UserRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/defi/tp_vente/repository/VenteRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/defi/tp_vente/service/ApprovisionnementService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/defi/tp_vente/service/ArticleService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/defi/tp_vente/service/CategorieService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/defi/tp_vente/service/SecurityService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/defi/tp_vente/service/SecurityServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/defi/tp_vente/service/UserDetailsServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/defi/tp_vente/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/defi/tp_vente/service/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/defi/tp_vente/service/VenteService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/defi/tp_vente/web/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/defi/tp_vente/web/UserValidator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/img/about.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/img/apple-touch-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/img/departments-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/img/departments-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/img/departments-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/img/departments-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/img/departments-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/img/doctors/doctors-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/img/doctors/doctors-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/img/doctors/doctors-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/img/doctors/doctors-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/img/doctors/domi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/img/doctors/po.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/img/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/img/gallery/gallery-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/img/gallery/gallery-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/img/gallery/gallery-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/img/gallery/gallery-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/img/gallery/gallery-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/img/gallery/gallery-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/img/gallery/gallery-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/img/gallery/gallery-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/img/hero-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/img/hero.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/img/testimonials/testimonials-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/img/testimonials/testimonials-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/img/testimonials/testimonials-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/img/testimonials/testimonials-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/img/testimonials/testimonials-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/animate.css/animate.compat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/animate.css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/animate.css/animate.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap-icons/bootstrap-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap-icons/bootstrap-icons.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap-icons/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/boxicons/css/animations.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/boxicons/css/boxicons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/boxicons/css/boxicons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/boxicons/css/transformations.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/boxicons/fonts/boxicons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/boxicons/fonts/boxicons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/boxicons/fonts/boxicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/boxicons/fonts/boxicons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/boxicons/fonts/boxicons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/fontawesome-free/css/all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/fontawesome-free/css/all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/fontawesome-free/css/brands.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/fontawesome-free/css/brands.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/fontawesome-free/css/fontawesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/fontawesome-free/css/fontawesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/fontawesome-free/css/regular.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/fontawesome-free/css/regular.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/fontawesome-free/css/solid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/fontawesome-free/css/solid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/fontawesome-free/css/svg-with-js.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/fontawesome-free/css/svg-with-js.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/fontawesome-free/css/v4-shims.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/fontawesome-free/css/v4-shims.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/fontawesome-free/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/fontawesome-free/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/fontawesome-free/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/fontawesome-free/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/fontawesome-free/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/fontawesome-free/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/fontawesome-free/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/fontawesome-free/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/fontawesome-free/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/fontawesome-free/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/fontawesome-free/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/fontawesome-free/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/fontawesome-free/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/fontawesome-free/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/fontawesome-free/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/glightbox/css/glightbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/glightbox/css/glightbox.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/glightbox/js/glightbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/glightbox/js/glightbox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/php-email-form/validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/purecounter/purecounter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/remixicon/remixicon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/remixicon/remixicon.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/remixicon/remixicon.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/remixicon/remixicon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/remixicon/remixicon.symbol.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/remixicon/remixicon.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/remixicon/remixicon.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/remixicon/remixicon.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/swiper/swiper-bundle.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assets/vendor/swiper/swiper-bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/forms/Readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/forms/appointment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/forms/contact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/Approvisionnement/ListeAppro.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/Approvisionnement/approEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/Approvisionnement/formAppro.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/Medilab/Appro/ListeAppro.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/Medilab/Appro/approEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/Medilab/Appro/formAppro.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/Medilab/ListAppro.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/Medilab/ListArt.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/Medilab/ListCat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/Medilab/ListVente.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/Medilab/Readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/Medilab/article/ListeName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/Medilab/article/formArticle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/Medilab/article/formEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/Medilab/article/listeArticle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/Medilab/article/listeSeuil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/Medilab/categorie/ListeCategories.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/Medilab/categorie/formCategorie.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/Medilab/changelog.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/Medilab/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/Medilab/inner-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/Medilab/vente/ListeVente.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/Medilab/vente/formVente.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/Medilab/vente/venteEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/article/ListeName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/article/formArticle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/article/formEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/article/listeArticle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/article/listeSeuil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/categorie/ListeCategories.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/categorie/formCategorie.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/registration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/vente/ListeVente.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/vente/formVente.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/vente/venteEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/welcome.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/validation.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/defi/tp_vente/TpVenteApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/TpVenteApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/TpVenteApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/controlleur/CategorieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/controlleur/CategorieController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/model/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/model/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/repository/ArticleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/repository/ArticleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/defi/tp_vente/service/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/categorie/ListeCategories.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/categorie/ListeCategories.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/defi/tp_vente/TpVenteApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/defi/tp_vente/TpVenteApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="yves_dominique" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="27CPFxTuYvKxj71VcS8MUbkc8sH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\tp_venteDominique\src\main\resources\templates" />
+      <recent name="E:\tp_venteDominique\src\main\java\com\defi\tp_vente\service" />
+      <recent name="E:\tp_venteDominique\src\main\java\com\defi\tp_vente\repository" />
+      <recent name="E:\tp_venteDominique\src\main\java\com\defi\tp_vente\model" />
+      <recent name="D:\DEFITECH\tp_vente\src\main\resources\templates\Medilab" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\tp_venteDominique\src\main\resources" />
+      <recent name="C:\Users\User\Dropbox\Mon PC (DESKTOP-5RE3J08)\Documents\tp_vente\src\main\resources\templates\article" />
+      <recent name="C:\Users\User\Dropbox\Mon PC (DESKTOP-5RE3J08)\Documents\tp_vente\src\main\resources\templates\Medilab" />
+      <recent name="C:\Users\User\Dropbox\Mon PC (DESKTOP-5RE3J08)\Documents\tp_vente\src\main\resources\static" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.defi.tp_vente" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="TpVenteApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.defi.tp_vente.TpVenteApplication" />
+      <module name="tp_venteDominique" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.defi.tp_vente.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TpVenteApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9f1edbfd-514f-4c1a-a010-c5be5bc1cabe" name="Changes" comment="" />
+      <created>1648821014165</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648821014165</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Premier dépot" />
+    <option name="LAST_COMMIT_MESSAGE" value="Premier dépot" />
+  </component>
+</project>

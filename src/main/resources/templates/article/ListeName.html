@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+
+    <h2>Liste des articles par nom</h2>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Catégorie</th>
+            <th>Libellé</th>
+            <th>Prix</th>
+            <th>Qte stock</th>
+            <th>Qte Seuil</th>
+            <th>Date Creation</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <!-- thymeleaf a se documenter-->
+        <tr th:each="article:${listeByNamer}">
+            <td th:text="${article.id}"></td>
+            <td th:text="${article.categorie.designation}"></td>
+            <td th:text="${article.libelle}"></td>
+            <td th:text="${article.prix}"></td>
+            <td th:text="${article.qteStock}"></td>
+            <td th:text="${article.qteSeuil}"></td>
+            <td th:text="${article.dateCreation}"></td>
+        </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+</div>
+</body>
+</html>
